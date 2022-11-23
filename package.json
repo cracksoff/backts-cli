@@ -1,6 +1,6 @@
 {
-	"name": "ts-backend-template",
-	"version": "1.0.0",
+	"name": "backts-cli",
+	"version": "1.0.2",
 	"description": "",
 	"main": "src/index.js",
 	"scripts": {
