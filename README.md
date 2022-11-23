@@ -10,5 +10,6 @@ npm i -D backts-cli -g
 ### Run script with your project name
 ```sh
 backts-cli project-name
+cd project-name
 npm i -D
 ```
