@@ -39,7 +39,6 @@ fs.access(`${CURR_DIR}/${PROJECT_NAME}`, (err) => {
 		}
 		fs.mkdirSync(`${CURR_DIR}/${PROJECT_NAME}`)
 		createDirectoryContents(`${__dirname}/template`, PROJECT_NAME)
-		if (process.platform == 'darwin') createDirectoryContents(`${__dirname}/macos`, PROJECT_NAME)
 	} else {
 		console.log('Папка уже существует')
 	}
