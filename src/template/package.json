@@ -13,6 +13,9 @@
 	"author": "",
 	"license": "ISC",
 	"type": "module",
+	"imports": {
+		"#app/*": "./.build/*"
+	},
 	"dependencies": {
 		"@onmoon/pg-tx": "^1.0.7",
 		"@pgtyped/query": "^1.0.1",
