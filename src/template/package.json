@@ -5,6 +5,7 @@
 	"main": ".build/index.js",
 	"scripts": {
 		"start": "env-cmd npx tsc-watch --onSuccess \"node .build/index.js\"",
+		"start:prod": "node .build/index.js",
 		"build": "tsc",
 		"typegen:pg": "env-cmd npx pgtyped -c pgtyped.json --watch",
 		"update": "npx npm-check-updates",
@@ -44,7 +45,10 @@
 			"max-depth": "off",
 			"capitalized-comments": "off",
 			"@typescript-eslint/comma-dangle": "off",
-			"@typescript-eslint/no-implicit-any-catch": "off"
+			"@typescript-eslint/no-implicit-any-catch": "off",
+			"unicorn/explicit-length-check": "off",
+			"@typescript-eslint/naming-convention": "off",
+			"no-warning-comments": "off"
 		}
 	},
 	"prettier": {

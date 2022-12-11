@@ -24,10 +24,10 @@ FROM node:$NODE_VERSION-alpine
 
 WORKDIR /app
 ENTRYPOINT ["/sbin/tini", "--"]
-CMD ["node", "index.js"]
+CMD ["npm", "run", "start:prod"]
 
 RUN apk add --no-cache tini
 
 COPY --from=build_modules /usr/src/app/node_modules /app/node_modules
-COPY --from=build_app /usr/src/app/.build /app
+COPY --from=build_app /usr/src/app /app
 COPY package*.json /app/
